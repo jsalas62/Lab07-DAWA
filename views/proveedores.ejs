@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% proveedores.forEach(proveedor=> { %>
+                <tr>
+                    <td>
+                        <%= proveedor.idproveedor %>
+                    </td>
+                    <td>
+                        <%= proveedor.nombrecia %>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</div>

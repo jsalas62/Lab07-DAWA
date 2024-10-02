@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID Insumo</th>
+                <th>Nombre</th>
+                <th>Precio Unitario</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% insumos.forEach(insumo => { %>
+                <tr>
+                    <td><%= insumo.idinsumo %></td>
+                    <td><%= insumo.nominsumo %></td>
+                    <td><%= insumo.preUni %></td>
+                    <td><%= insumo.stock %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
